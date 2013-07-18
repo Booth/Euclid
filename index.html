@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>You ever drunk Bailey's from a shoe?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+	<link href="js/lib/vendor/videojs/video-js.min.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script src="js/lib/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+  	<section class="container-fluid">
+		<video id="bg_video" class="video-js vjs-default-skin" preload="auto" width="100%" height="100%" poster="http://video-js.zencoder.com/oceans-clip.png" data-setup='{"autoplay": true, "loop": true, "controls":false}'>
+			<source src="video/247669.mp4" type='video/mp4' />
+			<source src="video/247669.webmsd.webm" type='video/webm' />
+			<source src="video/247669.oggtheora.ogv" type='video/ogg' />
+		</video>
+		<div id="repeating_bg"></div>
+		<div id="main_content" class="row-fluid">
+			<article class="span6 offset3" id="content_wrap">
+				<h1>It's a Creamy Beige!</h1>
+				<p>In the back of your cave is a pool with infinite amounts of Baileys, but you've only got two bottles to measure out just the right amount.
+				Choose the size of the two bottles and the amount you need - without your eyes gettin' wet!</p>
+				<form id="baileys-puzzle" class="form-horizontal">
+					<fieldset>
+						<legend>Make an Assessment!</legend>
+						<button class="btn btn-info"><i class="icon-question-sign"></i> need help</button>
+						<div class="control-group">
+							<label class="control-label" for="baileys-bottle-1"><i class="icon-beer"></i> Bottle 1: <span class="red">*</span></label>
+							<div class="controls">
+							  <input type="text" id="baileys_bottle_1" name="baileys_bottle_1" placeholder="mmmm... Baileys">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="baileys-bottle-2"><i class="icon-beer"></i> Bottle 2: <span class="red">*</span></label>
+							<div class="controls">
+							  <input type="text" id="baileys_bottle_2" name="baileys_bottle_2" placeholder="mmmm... more Baileys">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="baileys-total">Total Baileys: <span class="red">*</span></label>
+							<div class="controls">
+							  <input type="text" id="baileys_total" name="baileys_total" placeholder="easy now, fuzzy little man peach">
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+							  <button type="submit" class="btn btn-success"><i class="icon-heart"></i> I got something to show ya!</button>
+							</div>
+						</div>
+						<p><strong>Steps it takes:</strong> <span id="total_steps"></span></p>
+					</fieldset>
+				</form>
+			</article>
+		</div>
+		<img src="images/sky.png" alt="" id="bg_city"/>
+	</section>
+    <script data-main="js/app" src="js/lib/require.js"></script>
+  </body>
+</html>
